@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>HTML Calculator</title> 
+
+	<!-- For styling -->
+	<style> 
+		table { 
+      border-collapse: collapse;
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto;
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px;
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+		} 
+		
+		input{ 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+      background-color: black;
+		} 
+  .symbol{
+    background-color: grey;
+  }
+	</style> 
+</head> 
+
+<body style="background-color: rgba(128, 128, 128, 0.703)"> 
+
+	<!-- Create table -->
+	<table id="calcu" cellspacing="0" style="border: none;" > 
+		<tr> 
+			<td  colspan="3"> 
+				<input type="text" style="background-color: white;" id="result"> 
+			</td> 
+			<td><input type="button" style="background-color:rgb(10, 152, 152);" class="ac" value="AC"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="9"></td> 
+			<td><input type="button" value="8"></td> 
+			<td><input type="button" value="7"></td> 
+			<td><input type="button" class="symbol" value="+"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"></td> 
+			<td><input type="button" value="5"></td> 
+			<td><input type="button" value="6"></td> 
+			<td><input type="button" class="symbol" value="-"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1"></td> 
+			<td><input type="button" value="2"></td> 
+			<td><input type="button" value="3"></td> 
+			<td><input type="button" class="symbol" value="/"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0"></td> 
+			<td><input type="button" value="."></td> 
+			<td><input type="button" value="="></td> 
+			<td><input type="button" class="symbol" value="*"></td> 
+		</tr> 
+	</table> 
+</body> 
+
+</html> 
